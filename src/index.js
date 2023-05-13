@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-function App(params) {
-  return <div>This is test App</div>
+function App() {
+  return <div>This is a test App</div>
 }
 
 const root = createRoot(document.getElementById("root"));
