@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,7 @@
     "babel-loader": "^9.1.2",
     "eslint": "^8.40.0",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.1",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1",
@@ -29,6 +32,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
+    "resolve-cwd": "^3.0.0",
     "styled-components": "^5.3.10",
     "uniqid": "^5.4.0"
   }

@@ -9,13 +9,7 @@ import { Provider, useSelector } from "react-redux";
 import { setPerson } from "./redux/personSlice";
 
 function App() {
-  store.dispatch(setPerson({
-    targetPerson: defaultCase,
-    children: children,
-    parents: parents
-  }))
-  
-/*   if (!localStorage.length) {
+  if (!localStorage.length) {
     store.dispatch(setPerson({
       targetPerson: defaultCase,
       children: children,
@@ -28,7 +22,7 @@ function App() {
       parents: JSON.parse(localStorage.parents),
       activePerson: JSON.parse(localStorage.activePerson),
     }))
-  } */
+  }
 
   useSelector(state => {
     const appState = state.person
